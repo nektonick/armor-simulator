@@ -1,3 +1,4 @@
+use crate::biome::Biome;
 use crate::enemy::Enemy;
 
 pub struct EncounterGenerator;
@@ -14,4 +15,5 @@ impl EncounterGenerator {
 
 pub struct Encounter {
     pub enemies: Vec<Enemy>,
+    pub biome: Biome,
 }
